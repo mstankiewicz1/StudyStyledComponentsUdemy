@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Button } from './Buttons';
-import { SecondButton } from './Buttons';
-import Header from './components/Header';
+import { BasicInput, AwesomeInput } from './components/Inputs';
 
 import './App.css';
 
@@ -10,10 +8,9 @@ const App = () => {
 
   return (
     <div>
-      <Header/>
-      Hellow from app
-      <Button>Click me!</Button>
-      <SecondButton>Click me! i"m second</SecondButton>
+      <BasicInput/>
+      <AwesomeInput/>
+      <AwesomeInput type="email" placeholder="Please an enter email"/>
     </div>
   );
 }
